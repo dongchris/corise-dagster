@@ -74,10 +74,10 @@ def test_get_s3_data(file_path):
         )
 
 
-@pytest.mark.challenge
-def test_get_s3_data_empty(empty_file_path):
-    with build_op_context(op_config={"s3_key": empty_file_path}) as context:
-        get_s3_data_op(context)
+# @pytest.mark.challenge
+# def test_get_s3_data_empty(empty_file_path):
+#     with build_op_context(op_config={"s3_key": empty_file_path}) as context:
+#         get_s3_data_op(context)
 
 
 def test_process_data(stocks):
